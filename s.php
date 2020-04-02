@@ -1,5 +1,5 @@
 <?php
-require '../config.php';
+require 'config.php';
 
 $dare_id = $_GET['id'];
 
@@ -8,7 +8,7 @@ try {
 
     $dare_from = $dare_user['dare_from'];
     $dare_to = $dare_user['dare_to'];
-    $dare_id_set_to = (int) $dare_user['dare_id_set_to'];
+    $dare_id_set_to = (int)$dare_user['dare_id_set_to'];
 } catch (\Throwable $th) {
     throw $th;
 }
@@ -22,13 +22,14 @@ try {
 }
 
 
-if (!isset($_COOKIE['user_id'])) {
+if(!isset($_COOKIE['user_id'])){
     $user_id = 0;
-} else {
+}
+else{
     $user_id = $_COOKIE['user_id'];
 }
 
-if ($user_id != $dare_user['dare_from_user_id']) {
+if($user_id != $dare_user['dare_from_user_id']){
     $update_dare = array(
         "dare_id" => $dare_user['dare_id'],
         "dare_from_user_id" => $dare_user['dare_from_user_id'],
@@ -42,9 +43,9 @@ if ($user_id != $dare_user['dare_from_user_id']) {
         "dare_seen" => 1
     );
 
-    $dare_users_collection->updateOne(array("dare_from_user_id" => $dare_user['dare_from_user_id']), array('$set' => $update_dare));
+    $dare_users_collection->updateOne(array("dare_from_user_id" => $dare_user['dare_from_user_id']), array('$set' => $update_dare));   
 }
-
+ 
 ?>
 <h2><?php echo $dare_from; ?>'s dare</h2>
 

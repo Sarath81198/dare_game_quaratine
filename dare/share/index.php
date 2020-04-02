@@ -6,15 +6,15 @@ if (!isset($_POST['set_dare']) && $_SERVER['REQUEST_METHOD'] != 'POST') {
 }
 
 if (!isset($_POST['dare_from']) || trim($_POST['dare_from']) == '') {
-    echo "You did not enter your name.";
+    header("Location: /");
 }
 
 if (!isset($_POST['dare_to']) || trim($_POST['dare_to']) == '') {
-    echo "You did not enter the other person's name.";
+    header("Location: /");
 }
 
 if (!isset($_POST['type_of_relation']) || trim($_POST['type_of_relation']) == '') {
-    echo "You did not enter your name.";
+    header("Location: /");
 }
 
 function test_input($data)
@@ -79,7 +79,7 @@ if ($dare_users_collection->insertOne($set_dare)) {
         $dares = $dare_collection->find();
         foreach ($dares as $dare) {
             if ($selected_dare_id == $dare['dare_id']) {
-                echo "Here is the dare link: <br> http://localhost:8000/dare?id=" . $dare['dare_id'];
+                $dare_id_given = $dare_id;
             }
         }
     } catch (\Throwable $th) {
@@ -88,3 +88,6 @@ if ($dare_users_collection->insertOne($set_dare)) {
 } else {
     echo 0;
 }
+?>
+<h1>Hey <?php echo $dare_from; ?>, share this to <?php echo $dare_to; ?></h1>
+http://localhost:8000/dare?id=<?php echo $dare_id_given ?>
