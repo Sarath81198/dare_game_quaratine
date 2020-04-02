@@ -1,4 +1,4 @@
-<form action="share" method="post">
+<form action="share_dare.php" method="post">
     Enter you name:
     <input type="text" name="dare_from"><br>
     Enter the name of the person to whom you are going to send
