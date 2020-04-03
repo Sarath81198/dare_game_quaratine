@@ -13,7 +13,7 @@ if($_ENV['ENVIRONMENT'] == 'development') {
 elseif ($_ENV['ENVIRONMENT'] == 'production') {
 
         $client = new MongoDB\Client(
-            'mongodb+srv://dbUser:quarantine0987654321@quarantinedays-58jud.mongodb.net/quarantine_days?retryWrites=true&w=majority'
+            $_ENV['MONGODB_URI']
         );
 
 }
