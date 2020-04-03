@@ -12,6 +12,7 @@ $dotenv->load();
 if($_ENV['ENVIRONMENT'] == 'development') {
 
     $client = new MongoDB\Client('mongodb://127.0.0.1:27017');
+    $base_URL = "localhost:8000";
 
 }
 elseif ($_ENV['ENVIRONMENT'] == 'production') {
@@ -19,7 +20,7 @@ elseif ($_ENV['ENVIRONMENT'] == 'production') {
         $client = new MongoDB\Client(
             $_ENV['MONGODB_URI']
         );
-
+        $base_URL = $_SERVER['SERVER_NAME'];
 }
 
 

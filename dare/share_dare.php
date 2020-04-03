@@ -101,4 +101,4 @@ if ($dare_users_collection->insertOne($set_dare)) {
 }
 ?>
 <h1>Hey <?php echo $dare_from; ?>, share this to <?php echo $dare_to; ?></h1>
-http://localhost:8000/dare/dare.php?id=<?php echo $dare_id_given ?>
+http://<?php echo $base_URL; ?>/dare/dare.php?id=<?php echo $dare_id_given ?>
