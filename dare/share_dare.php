@@ -17,6 +17,18 @@ if (!isset($_POST['type_of_relation']) || trim($_POST['type_of_relation']) == ''
     header("Location: /");
 }
 
+if (gettype($_POST['dare_from']) != "string") {
+    header("Location: /");
+}
+
+if (gettype($_POST['dare_to']) != "string") {
+    header("Location: /");
+}
+
+if(gettype($_POST['type_of_relation']) != "string"){
+    header("Location: /");
+}
+
 function test_input($data)
 {
     $data = trim($data);
@@ -76,14 +88,13 @@ $set_dare = array(
 if ($dare_users_collection->insertOne($set_dare)) {
     $selected_dare_id = $selected_dare . $type_of_dare;
     try {
-        $dares = $dare_collection->find();
-        foreach ($dares as $dare) {
-            if ($selected_dare_id == $dare['dare_id']) {
+        $dare = $dare_collection->findOne(array('dare_id' => (int) $selected_dare_id));
+            if ((int) $selected_dare_id == $dare['dare_id']) {
                 $dare_id_given = $dare_id;
-            }
         }
     } catch (\Throwable $th) {
         throw $th;
+        echo 0;
     }
 } else {
     echo 0;
