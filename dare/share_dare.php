@@ -106,4 +106,4 @@ if ($dare_users_collection->insertOne($set_dare)) {
 
 <h1>Hey <?php echo $dare_from; ?>, share this to <?php echo $dare_to; ?></h1>
 http://<?php echo $base_URL; ?>/dare/dare.php?id=<?php echo $dare_id_given ?><br>
-<a href="whatsapp://send?text=<?php echo $dare_to; ?>, here's the dare for you. http://<?php echo $base_URL; ?>/dare/dare.php?id=<?php echo $dare_id_given ?>" data-action="http://<?php echo $base_URL; ?>/dare/dare.php?id=<?php echo $dare_id_given ?>">Share via Whatsapp</a>
+<a href="whatsapp://send?text=<?php echo $dare_to; ?>, here's the dare for you. <br><br> http://<?php echo $base_URL; ?>/dare/dare.php?id=<?php echo $dare_id_given ?>" data-action="http://<?php echo $base_URL; ?>/dare/dare.php?id=<?php echo $dare_id_given ?>">Share via Whatsapp</a>
