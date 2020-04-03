@@ -25,7 +25,7 @@ if (gettype($_POST['dare_to']) != "string") {
     header("Location: /");
 }
 
-if(gettype($_POST['type_of_relation']) != "string"){
+if (gettype($_POST['type_of_relation']) != "string") {
     header("Location: /");
 }
 
@@ -89,8 +89,8 @@ if ($dare_users_collection->insertOne($set_dare)) {
     $selected_dare_id = $selected_dare . $type_of_dare;
     try {
         $dare = $dare_collection->findOne(array('dare_id' => (int) $selected_dare_id));
-            if ((int) $selected_dare_id == $dare['dare_id']) {
-                $dare_id_given = $dare_id;
+        if ((int) $selected_dare_id == $dare['dare_id']) {
+            $dare_id_given = $dare_id;
         }
     } catch (\Throwable $th) {
         throw $th;
@@ -101,4 +101,5 @@ if ($dare_users_collection->insertOne($set_dare)) {
 }
 ?>
 <h1>Hey <?php echo $dare_from; ?>, share this to <?php echo $dare_to; ?></h1>
-http://<?php echo $base_URL; ?>/dare/dare.php?id=<?php echo $dare_id_given ?>
+http://<?php echo $base_URL; ?>/dare/dare.php?id=<?php echo $dare_id_given ?><br>
+<a href="whatsapp://send" data-text="<?php echo $dare_to; ?>, here's the dare for you" data-href="http://<?php echo $base_URL; ?>/dare/dare.php?id=<?php echo $dare_id_given ?>"> Whatsapp</a>
