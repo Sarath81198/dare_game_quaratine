@@ -3,16 +3,22 @@ require_once '../layout/header.php';
 ?>
 <div class="container">
     <center>
-        <h2><b><?php echo $dare_from; ?>'s dare</b></h2>
-        <br>
-        Hey <?php echo $dare_to ?>, here is a you dare for you!<br>
-        <br><br>
-        <h3><?php echo $dare_given; ?></h3>
-        <br><br>
-        <img src="../dare/gif/<?php echo $dare['dare_id']; ?>.gif" alt="Card image" style="height:300px; width:80%; object-fit: scale-down;">
+        <h2 class="text-warning" style="margin-bottom:50px;"><b><?php echo $dare_from; ?>'s dare</b></h2>
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title text-info">
+                    Hey <?php echo $dare_to ?>, here is a you dare for you!<br></p>
+                </h5>
+                <p class="card-text">
+                    <h3 class="text-primary"><b><?php echo $dare_given; ?></b></h3>
+                    <img src="../dare/gif/<?php echo $dare['dare_id']; ?>.gif" class="card-img-top" alt="Card image" style="height:300px; width:80%; object-fit: scale-down;">
+
+            </div>
+        </div>
     </center>
     <hr style="margin-top:50px;">
-    <h3>Also try these <?php echo $dare_to; ?>!</h3>
+    <h3 class="text-success">Also try these, <?php echo $dare_to; ?>!</h3>
     <div class="card bg-dark text-white" style="margin-top:30px; margin-bottom:50px">
         <img class="card-img" src="../img/dareGame.jpg" alt="Card image" style="height:200px; object-fit: cover;">
         <a href="dare/set_dare.php" style="color:white">
