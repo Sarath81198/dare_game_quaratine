@@ -5,15 +5,15 @@ require_once '../layout/header.php';
     <form action="../dare/share_dare.php" method="POST" onSubmit="disableBtn(this)">
         <div class="form-group">
             <label for="dare_from_name">Tell us your name:</label>
-            <input type="text" name="dare_from" class="form-control" id="dareFromName" placeholder="Enter your name ...">
+            <input type="text" name="dare_from" class="form-control" id="dareFromName" placeholder="Enter your name ..." required>
         </div>
         <div class="form-group">
             <label for="dare_from_name">Tell us the name of the person whom you're going to send our dare to:</label>
-            <input type="text" name="dare_to" class="form-control" id="dareToName" placeholder="Enter the dare receiver's name ...">
+            <input type="text" name="dare_to" class="form-control" id="dareToName" placeholder="Enter the dare receiver's name ..." required>
         </div>
         <div class="form-group">
             <label for="typeOfRelation">Enter the type relation with the receiver: <small><i>(Don't worry we would never expose this to the other person who receives)</i></small></label>
-            <select class="form-control" id="type_of_relation" name="type_of_relation">
+            <select class="form-control" id="type_of_relation" name="type_of_relation" required>
                 <option value="Crush">Crush</option>
                 <option value="Girlfriend/Boyfriend">Girlfriend/Boyfriend</option>
                 <option value="Guy/Girl bestfriend">Guy/Girl bestfriend</option>
