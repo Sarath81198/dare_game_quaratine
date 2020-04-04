@@ -13,7 +13,7 @@ require_once '../layout/header.php';
             </small>
         </div>
     </center>
-    <div class="input-group">
+    <div class="input-group" style="margin-bottom: 30px">
         <input type="" class="form-control" id="linkToBeCopied" value="http://<?php echo $base_URL; ?>/dare/dare.php?id=<?php echo $dare_id_given ?>" readonly>
         <div class="input-group-append">
 
@@ -24,7 +24,7 @@ require_once '../layout/header.php';
             </button>
         </div>
     </div>
-    <a href="whatsapp://send?text=Hey<?php echo $dare_to; ?>, the dare is inside this link! http://<?php echo $base_URL; ?>/dare/dare.php?id=<?php echo $dare_id_given ?>" data-action="share/whatsapp/share">Share via Whatsapp</a>
+    <a href="whatsapp://send?text=Hey <?php echo $dare_to; ?>, the dare is inside this link! http://<?php echo $base_URL; ?>/dare/dare.php?id=<?php echo $dare_id_given ?>" data-action="share/whatsapp/share" class="btn btn-success" style="color: white"><i class="fa fa-whatsapp"></i> Share via Whatsapp</a>
 </div>
 <script>
     function copyToClipboard() {
