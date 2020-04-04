@@ -57,13 +57,13 @@ switch ($type_of_relation) {
 
     case 'Girlfriend/Boyfriend':
         $type_of_dare = 1;
-        $selected_dare = rand(1, 16);
+        $selected_dare = rand(1, 10);
         $dare_id = $dare_from_user_id . '_' . $type_of_dare . '_' . $selected_dare . '_' . uniqid();
         break;
 
     case 'Guy/Girl bestfriend':
         $type_of_dare = 2;
-        $selected_dare = rand(1, 16);
+        $selected_dare = rand(1, 11);
         $dare_id = $dare_from_user_id . '_' . $type_of_dare . '_' . $selected_dare . '_' . uniqid();
         break;
 
