@@ -3,15 +3,15 @@ require_once '../layout/header.php';
 ?>
 <div class="container">
     <center>
-        <h3 style="margin-bottom:50px">Hey <?php echo $dare_from; ?>, share this to <?php echo $dare_to; ?></h1>
-            <div style="margin-bottom:20px">
-                <small>
-                    Click on
-                    <span class="material-icons" style="font-size:13px">
-                        assignment
-                    </span> to the link copy
-                </small>
-            </div>
+        <h3 style="margin-bottom:50px">Hey <?php echo $dare_from; ?>, share this to <?php echo $dare_to; ?></h3>
+        <div style="margin-bottom:20px">
+            <small>
+                Click on
+                <span class="material-icons" style="font-size:13px">
+                    assignment
+                </span> to the link copy
+            </small>
+        </div>
     </center>
     <div class="input-group">
         <input type="" class="form-control" id="linkToBeCopied" value="http://<?php echo $base_URL; ?>/dare/dare.php?id=<?php echo $dare_id_given ?>" readonly>
@@ -24,7 +24,7 @@ require_once '../layout/header.php';
             </button>
         </div>
     </div>
-    <a href="whatsapp://send" data-text="Do the Dare!" data-href="http://<?php echo $base_URL; ?>/dare/dare.php?id=<?php echo $dare_id_given ?>" class="wa_btn wa_btn_m">Share via WhatsApp</a>
+    <a href="whatsapp://send?text=Hey<?php echo $dare_to; ?>, the dare is inside this link! http://<?php echo $base_URL; ?>/dare/dare.php?id=<?php echo $dare_id_given ?>" data-action="share/whatsapp/share">Share via Whatsapp</a>
 </div>
 <script>
     function copyToClipboard() {
