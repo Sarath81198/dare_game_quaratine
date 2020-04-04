@@ -24,7 +24,7 @@ require_once '../layout/header.php';
             </button>
         </div>
     </div>
-    <a href="whatsapp://send" data-text="Do the Dare!" data-href="thisistheurltosend" class="wa_btn wa_btn_m">Share via WhatsApp</a>
+    <a href="whatsapp://send" data-text="Do the Dare!" data-href="http://<?php echo $base_URL; ?>/dare/dare.php?id=<?php echo $dare_id_given ?>" class="wa_btn wa_btn_m">Share via WhatsApp</a>
 </div>
 <script>
     function copyToClipboard() {
