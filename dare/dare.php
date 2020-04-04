@@ -44,6 +44,9 @@ if ($user_id != $dare_user['dare_from_user_id']) {
 
     $dare_users_collection->updateOne(array("dare_from_user_id" => $dare_user['dare_from_user_id']), array('$set' => $update_dare));
 }
-
-require_once '../view/dare.php';
+if (!$dare_user) {
+    header("Location: /dare/set_dare.php");
+} else {
+    require_once '../view/dare.php';
+}
 ?>
