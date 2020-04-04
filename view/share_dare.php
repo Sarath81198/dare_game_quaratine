@@ -7,20 +7,17 @@ require_once '../layout/header.php';
         <div style="margin-bottom:20px">
             <small>
                 Click on
-                <span class="material-icons" style="font-size:13px">
-                    assignment
-                </span> to the link copy
+                <i class="fa fa-clipboard" style="font-size:13px"></i>
+                to the link copy
             </small>
         </div>
     </center>
     <div class="input-group" style="margin-bottom: 30px">
-        <input type="" class="form-control" id="linkToBeCopied" value="http://<?php echo $base_URL; ?>/dare/dare.php?id=<?php echo $dare_id_given ?>" readonly>
+        <input type="text" class="form-control" id="linkToBeCopied" value="http://<?php echo $base_URL; ?>/dare/dare.php?id=<?php echo $dare_id_given ?>" readonly>
         <div class="input-group-append">
 
             <button id="copyButton" onClick="copyToClipboard()" class="input-group-text">
-                <span class="material-icons">
-                    assignment
-                </span>
+                <i class="fa fa-clipboard"></i>
             </button>
         </div>
     </div>
