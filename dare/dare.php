@@ -45,10 +45,5 @@ if ($user_id != $dare_user['dare_from_user_id']) {
     $dare_users_collection->updateOne(array("dare_from_user_id" => $dare_user['dare_from_user_id']), array('$set' => $update_dare));
 }
 
+require_once '../view/dare.php';
 ?>
-<h2><?php echo $dare_from; ?>'s dare</h2>
-
-Hey <?php echo $dare_to ?>, here is a you dare <br>
-<h3><?php echo $dare_given; ?></h3>
-<br>
-<a href="/">Create you own dare</a>

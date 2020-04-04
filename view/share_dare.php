@@ -21,7 +21,9 @@ require_once '../layout/header.php';
             </button>
         </div>
     </div>
-    <a href="whatsapp://send?text=Hey <?php echo $dare_to; ?>, the dare is inside this link! http://<?php echo $base_URL; ?>/dare/dare.php?id=<?php echo $dare_id_given ?>" data-action="share/whatsapp/share" class="btn btn-success" style="color: white"><i class="fa fa-whatsapp"></i> Share via Whatsapp</a>
+    <center>
+        <a href="whatsapp://send?text=Hey <?php echo $dare_to; ?>, the dare is inside this link! http://<?php echo $base_URL; ?>/dare/dare.php?id=<?php echo $dare_id_given ?>" data-action="share/whatsapp/share" class="btn btn-success" style="color: white"><i class="fa fa-whatsapp"></i> Share via Whatsapp</a>
+    </center>
 </div>
 <script>
     function copyToClipboard() {
