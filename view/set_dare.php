@@ -16,7 +16,7 @@ require_once '../layout/header.php';
             <select class="form-control" id="type_of_relation" name="type_of_relation" required>
                 <option value="Crush">Crush</option>
                 <option value="Girlfriend/Boyfriend">Girlfriend/Boyfriend</option>
-                <option value="Guy/Girl bestfriend">Guy/Girl bestfriend</option>
+                <option value="Guy/Girl bestfriend">Friend</option>
             </select>
         </div>
         <input type="submit" value="SET DARE" name="set_dare" id="setDare" class="btn btn-outline-warning" />
