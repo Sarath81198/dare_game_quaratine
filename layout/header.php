@@ -7,9 +7,9 @@
     <meta name="theme-color" content="#343a40">
     <!-- WhatsApp -->
     <meta property="og:site_name" content="GRATIFY!">
-    <meta property="og:title" content="Entertain you!" />
-    <meta property="og:description" content="Enjoy entertaining yourself and also the people around you. " />
-    <meta property="og:image" itemprop="image" content="/img/gratifyLogoWhatsApp.png">
+    <meta property="og:title" content="Here's a dare for you!" />
+    <meta property="og:description" content="Do the dare! Also you can set a dare for anyone! 😎" />
+    <meta property="og:image" itemprop="image" content="../img/gratifyLogoWhatsApp.png">
     <meta property="og:type" content="website" />
     <meta property="og:updated_time" content="1586045921" />
     <!-- Font Awesome Icons -->
