@@ -20,7 +20,7 @@ elseif ($_ENV['ENVIRONMENT'] == 'production') {
         $client = new MongoDB\Client(
             $_ENV['MONGODB_URI']
         );
-        $base_URL = "15.206.69.50";
+        $base_URL = "gratify.tk";
 }
 
 
