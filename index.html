@@ -3,6 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Google Chrome for Android -->
+    <meta name="theme-color" content="#343a40">
     <!-- WhatsApp -->
     <meta property="og:site_name" content="GRATIFY!">
     <meta property="og:title" content="Entertain you!" />
