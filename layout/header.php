@@ -3,6 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- WhatsApp -->
+    <meta property="og:site_name" content="GRATIFY!">
+    <meta property="og:title" content="Entertain you!" />
+    <meta property="og:description" content="Enjoy entertaining yourself and also the people around you. " />
+    <meta property="og:image" itemprop="image" content="/img/gratifyLogoWhatsApp.png">
+    <meta property="og:type" content="website" />
+    <meta property="og:updated_time" content="1586045921" />
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Material Icons CDN -->
