@@ -15,7 +15,7 @@ require_once '../layout/header.php';
             <label for="typeOfRelation">Enter the type of relation with the receiver: <small><i>(Don't worry we would never expose this to the other person who receives)</i></small></label>
             <select class="form-control" id="type_of_relation" name="type_of_relation" required>
                 <option value="Crush">Crush</option>
-                <option value="Girlfriend/Boyfriend">Girlfriend/Boyfriend</option>
+                <option value="Girlfriend/Boyfriend">Couple</option>
                 <option value="Guy/Girl bestfriend">Friend</option>
             </select>
         </div>
