@@ -3,15 +3,17 @@ require_once '../layout/header.php';
 ?>
 <div class="container">
     <center>
-        <h2 class="text-warning" style="margin-bottom:50px;"><b><?php echo $dare_from; ?>'s dare</b></h2>
-
+        <div style="margin-bottom:50px;">
+            <h2 class="text-warning"><b><?php echo $dare_from; ?>'s dare</b></h2>
+            <small><b><i>PS: This dare was generated randomly by <a href="/">Gratify</a></i> 😉 <i>. You can set dare for anyone <a href="../dare/set_dare.php">here</a>.</i></b></small>
+        </div>
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title text-info">
+                <h5 class="card-title text-info" style="margin-bottom:50px;">
                     Hey <?php echo $dare_to ?>, here is a you dare for you!<br></p>
                 </h5>
                 <p class="card-text">
-                    <h3 class="text-primary"><b><?php echo $dare_given; ?></b></h3>
+                    <h3 class="text-primary" style="margin-bottom:40px;"><b><?php echo $dare_given; ?></b></h3>
                     <img src="../dare/gif/<?php echo $dare['dare_id']; ?>.gif" class="card-img-top" alt="Card image" style="height:300px; width:80%; object-fit: scale-down;">
 
             </div>
