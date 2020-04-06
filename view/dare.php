@@ -22,7 +22,7 @@ require_once '../layout/header.php';
     <hr style="margin-top:50px;">
     <h3 class="text-success">Also try these, <?php echo $dare_to; ?>!</h3>
     <div class="card bg-dark text-white" style="margin-top:30px; margin-bottom:50px">
-        <img class="card-img" src="../img/dareGame.jpg" alt="Card image" style="height:200px; object-fit: cover;">
+        <!-- <img class="card-img" src="../img/dareGame.jpg" alt="Card image" style="height:200px; object-fit: cover;"> -->
         <a href="../dare/set_dare.php" style="color:white">
             <div class="card-img-overlay">
                 <h5 class="card-title">Create a dare</h5>
