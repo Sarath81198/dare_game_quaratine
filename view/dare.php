@@ -14,7 +14,7 @@ require_once '../layout/header.php';
                 </h5>
                 <p class="card-text">
                     <h3 class="text-primary" style="margin-bottom:40px;"><b><?php echo $dare_given; ?></b></h3>
-                    <!-- <img src="../dare/gif/<?php echo $dare['dare_id']; ?>.gif" class="card-img-top" alt="Card image" style="height:300px; width:80%; object-fit: scale-down;"> -->
+                    <img src="../dare/gif/<?php echo $dare['dare_id']; ?>.gif" class="card-img-top" alt="Card image" style="height:300px; width:80%; object-fit: scale-down;">
 
             </div>
         </div>
