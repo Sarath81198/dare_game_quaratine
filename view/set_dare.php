@@ -1,5 +1,6 @@
 <?php
 require_once '../layout/header.php';
+require_once '../config.php';
 ?>
 <div class="container">
     <form action="../dare/share_dare.php" method="POST" onSubmit="disableBtn(this)">
