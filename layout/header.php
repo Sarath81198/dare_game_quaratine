@@ -18,8 +18,7 @@
     <!-- jQuery -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Google Font -Aladin -->
-    <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
+    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <!-- Google Chrome for Android -->
     <meta name="theme-color" content="#343a40">
@@ -45,14 +44,14 @@
 <body style="
     font-family : 'Montserrat', sans-serif;">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin-bottom: 80px">
-        <a class="navbar-brand" href="/" style="font-family: 'Aladin', cursive;"><b>Gratify</b></a>
+        <a class="navbar-brand" href="/"><b>Gratify</b></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="/">Home </a>
                 </li>
                 <li class="nav-item dropdown">
@@ -62,6 +61,9 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="../dare/set_dare.php">Set Dare</a>
                     </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../secret_love/find.php">Secret Lover ? </a>
                 </li>
             </ul>
         </div>
