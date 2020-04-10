@@ -41,7 +41,7 @@ require_once '../layout/header.php';
 </style>
 <div class="container">
     <div class="form-group">
-        <form id="regForm" method="POST" action="../../secret_love/result.php">
+        <form id="regForm" method="POST" onSubmit="disableSubmitBtn();" action="../../secret_love/result.php">
             <h1 style="margin-bottom:100px">Find out:</h1>
             <!-- One "tab" for each step in the form: -->
             <div class="tab">
@@ -55,7 +55,7 @@ require_once '../layout/header.php';
                 <b>
                     <div style="margin-bottom:50px">How would you describe yourself in one word ?</div>
                 </b>
-                <select id="quesOne" class="custom-select" name="ques_one" size="5" required>
+                <select id="quesOne" class="custom-select" onChange="enableNextBtn();" name="ques_one" size="4" required>
                     <option value="1">Hardworking</option>
                     <option value="2">Modesty</option>
                     <option value="3">Loyal</option>
@@ -68,7 +68,7 @@ require_once '../layout/header.php';
                         Where do you spend most of your time ?
                     </div>
                 </b>
-                <select id="quesTwo" class="custom-select" name="ques_two" size="5" required>
+                <select id="quesTwo" class="custom-select" onChange="enableNextBtn();" name="ques_two" size="4" required>
                     <option value="1">At home</option>
                     <option value="2">Hanging around at town</option>
                     <option value="3">At friend's house</option>
@@ -81,7 +81,7 @@ require_once '../layout/header.php';
                         If you were in a jam, who would you call first ?
                     </div>
                 </b>
-                <select id="quesThree" name="ques_three" class="custom-select" size="5" required>
+                <select id="quesThree" name="ques_three" onChange="enableNextBtn();" class="custom-select" size="4" required>
                     <option value="1">Family Member</option>
                     <option value="2">A good friend</option>
                     <option value="3">Anyone nearby</option>
@@ -94,7 +94,7 @@ require_once '../layout/header.php';
                         Which season is your favorite ?
                     </div>
                 </b>
-                <select id="quesFour" name="ques_four" class="custom-select" size="5" required>
+                <select id="quesFour" name="ques_four" onChange="enableNextBtn();" class="custom-select" size="4" required>
                     <option value="1">Winter</option>
                     <option value="2">Spring</option>
                     <option value="3">Summer</option>
@@ -107,7 +107,7 @@ require_once '../layout/header.php';
                         If you have free time in your hands, you will most likely
                     </div>
                 </b>
-                <select id="quesFive" name="ques_five" class="custom-select" size="5" required>
+                <select id="quesFive" name="ques_five" onChange="enableNextBtn();" class="custom-select" size="4" required>
                     <option value="1">Studying</option>
                     <option value="2">Shopping</option>
                     <option value="3">Singing</option>
@@ -120,7 +120,7 @@ require_once '../layout/header.php';
                         What's your idea of a perfect date ?
                     </div>
                 </b>
-                <select id="quesSix" name="ques_six" class="custom-select" size="5" required>
+                <select id="quesSix" name="ques_six" onChange="enableNextBtn();" class="custom-select" size="4" required>
                     <option value="1">Going to movies</option>
                     <option value="2">Chatting over a cup of coffee</option>
                     <option value="3">A romantic dinner</option>
@@ -133,7 +133,7 @@ require_once '../layout/header.php';
                         Whom do you spend your most of the time with ?
                     </div>
                 </b>
-                <select id="quesSeven" name="ques_seven" class="custom-select" size="5" required>
+                <select id="quesSeven" name="ques_seven" onChange="enableNextBtn();" class="custom-select" size="4" required>
                     <option value="1">Co-workers</option>
                     <option value="2">Friends</option>
                     <option value="3">Family</option>
@@ -164,6 +164,14 @@ require_once '../layout/header.php';
     var currentTab = 0; // Current tab is set to be the first tab (0)
     showTab(currentTab); // Display the current tab
 
+    function disableSubmitBtn() {
+        document.getElementById("nextBtn").disbled = true;
+    }
+
+    function enableNextBtn() {
+        document.getElementById("nextBtn").disabled = false;
+    }
+
     function showTab(n) {
         // This function will display the specified tab of the form...
         var x = document.getElementsByClassName("tab");
@@ -185,6 +193,10 @@ require_once '../layout/header.php';
 
     function nextPrev(n) {
         name = document.getElementById("nameGiven").value
+
+        if (n == -1) {
+            enableNextBtn();
+        }
 
         if (n == 1 && name == "") {
             window.alert("Enter your name")
@@ -213,7 +225,7 @@ require_once '../layout/header.php';
         // This function deals with validation of the form fields
         var x, y, i, valid = true;
         x = document.getElementsByClassName("tab");
-        y = x[currentTab].getElementsByTagName("select");
+        y = x[currentTab].getElementsByTagName("input");
         // A loop that checks every input field in the current tab:
         for (i = 0; i < y.length; i++) {
             // If a field is empty...
@@ -227,6 +239,7 @@ require_once '../layout/header.php';
         // If the valid status is true, mark the step as finished and valid:
         if (valid) {
             document.getElementsByClassName("step")[currentTab].className += " finish";
+            document.getElementById("nextBtn").disabled = true;
         }
         return valid; // return the valid status
     }
