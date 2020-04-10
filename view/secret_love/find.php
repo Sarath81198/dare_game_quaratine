@@ -36,13 +36,24 @@ require_once '../layout/header.php';
 
     /* Mark the steps that are finished and valid: */
     .step.finish {
-        background-color: #4CAF50;
+        background-color: #4272f5;
     }
 </style>
 <div class="container">
     <div class="form-group">
         <form id="regForm" method="POST" onSubmit="disableSubmitBtn();" action="../../secret_love/result.php">
-            <h1 style="margin-bottom:100px">Find out:</h1>
+            <h3 style="text-align: center; margin-bottom:70px">Find out who loves you secretly:</h3>
+            <!-- Circles which indicates the steps of the form: -->
+            <div style="text-align:center;margin-bottom:50px;">
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+            </div>
             <!-- One "tab" for each step in the form: -->
             <div class="tab">
                 <b>
@@ -145,17 +156,6 @@ require_once '../layout/header.php';
                     <button type="button" id="prevBtn" class="btn btn-info" onclick="nextPrev(-1)">Previous</button>
                     <button type="button" id="nextBtn" class="btn btn-success" onclick="nextPrev(1)">Next</button>
                 </center>
-            </div>
-            <!-- Circles which indicates the steps of the form: -->
-            <div style="text-align:center;margin-top:40px;">
-                <span class="step"></span>
-                <span class="step"></span>
-                <span class="step"></span>
-                <span class="step"></span>
-                <span class="step"></span>
-                <span class="step"></span>
-                <span class="step"></span>
-                <span class="step"></span>
             </div>
         </form>
     </div>
