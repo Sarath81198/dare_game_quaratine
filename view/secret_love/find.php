@@ -42,7 +42,7 @@ require_once '../layout/header.php';
 <div class="container">
     <div class="form-group">
         <form id="regForm" method="POST" onSubmit="disableSubmitBtn();" action="../../secret_love/result.php">
-            <h3 style="text-align: center; margin-bottom:70px">Find out who loves you secretly:</h3>
+            <h3 class="text-primary" style="text-align: center; margin-bottom:70px">Find out who loves you secretly:</h3>
             <!-- Circles which indicates the steps of the form: -->
             <div style="text-align:center;margin-bottom:50px;">
                 <span class="step"></span>
@@ -57,14 +57,14 @@ require_once '../layout/header.php';
             <!-- One "tab" for each step in the form: -->
             <div class="tab">
                 <b>
-                    <div style="margin-bottom:50px">Enter your name:</div>
+                    <div style="margin-bottom:50px" class="text-info">Enter your name:</div>
                 </b>
                 <input type="text" name="name" class="form-control" id="nameGiven" placeholder="Enter your name ..." required>
 
             </div>
             <div class="tab">
                 <b>
-                    <div style="margin-bottom:50px">How would you describe yourself in one word ?</div>
+                    <div style="margin-bottom:50px" class="text-info">How would you describe yourself in one word ?</div>
                 </b>
                 <select id="quesOne" class="custom-select" onChange="enableNextBtn();" name="ques_one" size="4" required>
                     <option value="1">Hardworking</option>
@@ -75,7 +75,7 @@ require_once '../layout/header.php';
             </div>
             <div class="tab">
                 <b>
-                    <div style="margin-bottom:50px">
+                    <div style="margin-bottom:50px" class="text-info">
                         Where do you spend most of your time ?
                     </div>
                 </b>
@@ -88,7 +88,7 @@ require_once '../layout/header.php';
             </div>
             <div class="tab">
                 <b>
-                    <div style="margin-bottom:50px">
+                    <div style="margin-bottom:50px" class="text-info">
                         If you were in a jam, who would you call first ?
                     </div>
                 </b>
@@ -101,7 +101,7 @@ require_once '../layout/header.php';
             </div>
             <div class="tab">
                 <b>
-                    <div style="margin-bottom:50px">
+                    <div style="margin-bottom:50px" class="text-info">
                         Which season is your favorite ?
                     </div>
                 </b>
@@ -114,7 +114,7 @@ require_once '../layout/header.php';
             </div>
             <div class="tab">
                 <b>
-                    <div style="margin-bottom:50px">
+                    <div style="margin-bottom:50px" class="text-info">
                         If you have free time in your hands, you will most likely
                     </div>
                 </b>
@@ -127,7 +127,7 @@ require_once '../layout/header.php';
             </div>
             <div class="tab">
                 <b>
-                    <div style="margin-bottom:50px">
+                    <div style="margin-bottom:50px" class="text-info">
                         What's your idea of a perfect date ?
                     </div>
                 </b>
@@ -140,7 +140,7 @@ require_once '../layout/header.php';
             </div>
             <div class="tab">
                 <b>
-                    <div style="margin-bottom:50px">
+                    <div style="margin-bottom:50px" class="text-info">
                         Whom do you spend your most of the time with ?
                     </div>
                 </b>
@@ -153,7 +153,7 @@ require_once '../layout/header.php';
             </div>
             <div style="overflow:auto;">
                 <center style="margin-top:50px">
-                    <button type="button" id="prevBtn" class="btn btn-info" onClick="window.location.reload()">Reset</button>
+                    <button type="button" id="prevBtn" class="btn btn-warning" onClick="window.location.reload()">Reset</button>
                     <!-- <button type="button" id="prevBtn" class="btn btn-info" onclick="nextPrev(-1)">Previous</button> -->
                     <button type="button" id="nextBtn" class="btn btn-success" onclick="nextPrev(1)">Next</button>
                 </center>
