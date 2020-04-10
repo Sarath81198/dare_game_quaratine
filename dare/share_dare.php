@@ -101,5 +101,5 @@ if ($dare_users_collection->insertOne($set_dare)) {
 }
 
 // View for dare sharing page
-require_once '../view/share_dare.php';
+require_once '../view/dare/share_dare.php';
 ?>

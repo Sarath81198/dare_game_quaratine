@@ -15,10 +15,12 @@
     </script>
     <!-- Google AdSense -->
     <!-- <script data-ad-client="ca-pub-9818240983943649" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+    <!-- jQuery -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Google Font -Aladin -->
     <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <!-- Google Chrome for Android -->
     <meta name="theme-color" content="#343a40">
     <!-- WhatsApp -->
@@ -34,10 +36,14 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Bootstrap CDN for CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <title>Gratify</title>
 </head>
 
-<body>
+<body style="
+    font-family : 'Montserrat', sans-serif;">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin-bottom: 80px">
         <a class="navbar-brand" href="/" style="font-family: 'Aladin', cursive;"><b>Gratify</b></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

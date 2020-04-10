@@ -28,3 +28,4 @@ $db = $client->quarantine_days;
 
 $dare_collection = $db->dare_game;
 $dare_users_collection = $db->dare_users;
+$secret_lover_collection = $db->secret_lover;

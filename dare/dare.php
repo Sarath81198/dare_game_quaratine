@@ -47,6 +47,6 @@ if ($user_id != $dare_user['dare_from_user_id']) {
 if (!$dare_user) {
     header("Location: /dare/set_dare.php");
 } else {
-    require_once '../view/dare.php';
+    require_once '../view/dare/dare.php';
 }
 ?>

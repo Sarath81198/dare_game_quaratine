@@ -1,2 +1,2 @@
 <?php
-require_once '../view/set_dare.php';
+require_once '../view/dare/set_dare.php';
