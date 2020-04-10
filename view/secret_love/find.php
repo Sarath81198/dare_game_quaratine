@@ -153,7 +153,7 @@ require_once '../layout/header.php';
             </div>
             <div style="overflow:auto;">
                 <center style="margin-top:50px">
-                    <button type="button" id="prevBtn" class="btn btn-info" onclick="nextPrev(-1)">Previous</button>
+                    <!-- <button type="button" id="prevBtn" class="btn btn-info" onclick="nextPrev(-1)">Previous</button> -->
                     <button type="button" id="nextBtn" class="btn btn-success" onclick="nextPrev(1)">Next</button>
                 </center>
             </div>
