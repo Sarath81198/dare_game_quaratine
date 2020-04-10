@@ -42,7 +42,7 @@ require_once '../layout/header.php';
 <div class="container">
     <div class="form-group">
         <form id="regForm" method="POST" onSubmit="disableSubmitBtn();" action="../../secret_love/result.php">
-            <h3 class="text-primary" style="text-align: center; margin-bottom:70px">Find out who loves you secretly:</h3>
+            <h3 class="text-primary" style="text-align: center; margin-bottom:70px"><b>Find out who loves you secretly</b></h3>
             <!-- Circles which indicates the steps of the form: -->
             <div style="text-align:center;margin-bottom:50px;">
                 <span class="step"></span>
