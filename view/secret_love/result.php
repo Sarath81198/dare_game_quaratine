@@ -16,7 +16,19 @@ require_once '../layout/header.php';
                 <img src="../../secret_love/gif/<?php echo $gif_file_name; ?>" style="height:300; width:90% ;object-fit: scale-down;">
             </div>
         </div>
-</div>
+    </center>
+    <hr style="margin-top:50px;">
+    <h3 class="text-success">Also try these, <?php echo $name; ?>!</h3>
+
+    <div class="card bg-dark text-white" style="margin-top:30px; margin-bottom:50px">
+        <img class="card-img" src="../../img/dareGame.jpg" alt="Card image" style="height:200px; object-fit: cover;">
+        <a href="../dare/set_dare.php" style="color:white">
+            <div class="card-img-overlay">
+                <h5 class="card-title">Create a dare</h5>
+                <p class="card-text">Set a dare for you special one here. 💓</p>
+            </div>
+        </a>
+    </div>
 </div>
 <?php
 require_once '../layout/footer.php';

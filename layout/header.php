@@ -43,7 +43,7 @@
 
 <body style="
     font-family : 'Montserrat', sans-serif;">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin-bottom: 80px">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="margin-bottom: 80px">
         <a class="navbar-brand" href="/"><b>Gratify</b></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -68,3 +68,4 @@
             </ul>
         </div>
     </nav>
+    <div style="margin-top: 100px;">
