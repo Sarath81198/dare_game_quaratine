@@ -33,7 +33,7 @@ require_once '../layout/header.php';
 
     <div class="card bg-dark text-white" style="margin-top:30px; margin-bottom:50px">
         <img class="card-img" src="../../img/secretLove.png" alt="Card image" style="height:200px; object-fit: cover;">
-        <a href="secret_love/find.php" style="color:white">
+        <a href="../secret_love/find.php" style="color:white">
             <div class="card-img-overlay">
                 <h5 class="card-title">Secret Lover ?</h5>
                 <p class="card-text">Find out who secretly loves you. 💖</p>
