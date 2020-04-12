@@ -14,7 +14,7 @@
         gtag('config', 'UA-162779167-1');
     </script>
     <!-- Google AdSense -->
-    <!-- <script data-ad-client="ca-pub-9818240983943649" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+    <script data-ad-client="ca-pub-9818240983943649" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <!-- jQuery -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">

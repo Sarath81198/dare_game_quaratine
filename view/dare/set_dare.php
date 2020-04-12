@@ -22,11 +22,12 @@ require_once '../config.php';
         </div>
         <input type="submit" value="SET DARE" name="set_dare" id="setDare" class="btn btn-outline-warning" />
     </form>
-    <center style="margin-top:40px;margin-bottom:40px">
+    <center style="margin-top:40px;margin-bottom:50px">
         <hr>
         <a href="whatsapp://send?text=Send me your name and I'll set you a dare! Also set a dare for anyone here:  https://<?php echo $base_URL; ?>/dare/set_dare.php" data-action="share/whatsapp/share" class="btn btn-success" style="color: white"><i class="fa fa-whatsapp"></i> Set a status on Whatsapp</a>
     </center>
 </div>
+
 <script>
     function disableBtn(form) {
         form.set_dare.disabled = true
