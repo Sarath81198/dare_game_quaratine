@@ -17,6 +17,9 @@
     <script data-ad-client="ca-pub-9818240983943649" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <!-- jQuery -->
     <meta charset="utf-8">
+    <meta name="description" content="Gratify is an entertaining website which is built purely for fun purpose. Engage yourself with us for entertainment">
+    <meta name="keywords" content="Entertainment, fun, gratify, website, challenges">
+    <meta name="author" content="GRATIFY">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
