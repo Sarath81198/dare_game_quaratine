@@ -1,5 +1,5 @@
 </div>
-<div class="container">
+<div class="container" style="margin-top:80px">
     <center>
         <?php
         if ($_ENV['ENVIRONMENT'] == 'production') {
