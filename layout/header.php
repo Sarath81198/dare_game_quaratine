@@ -72,7 +72,7 @@
                     <a class="nav-link" href="../secret_love/find.php">Secret Lover ? </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about.php">About</a>
+                    <a class="nav-link" href="../about.php">About</a>
                 </li>
             </ul>
         </div>
