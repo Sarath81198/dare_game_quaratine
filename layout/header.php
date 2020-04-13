@@ -21,6 +21,9 @@
     <meta name="keywords" content="Entertainment, fun, gratify, website, challenges">
     <meta name="author" content="GRATIFY">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <!-- Google Chrome for Android -->
@@ -67,6 +70,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="../secret_love/find.php">Secret Lover ? </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.php">About</a>
                 </li>
             </ul>
         </div>
